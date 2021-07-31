@@ -1,16 +1,16 @@
-<h1><%= @article.title %></h1>
+<h2><%= @article.title %></h2>
 
-<p><%= @article.body %></p>
+<p class="article"><%= @article.body %></p>
 
-<ul>
-  <li><%= link_to 'Edit', edit_article_path(@article) %></li>
-  <li><%= link_to 'Destroy', article_path(@article),
+<p class="article_options">
+  <%= link_to 'edit', edit_article_path(@article) %> |
+  <%= link_to 'delete', article_path(@article),
                   method: :delete,
-                  data: { confirm: "Are you sure?" } %></li>
-</ul>
+                  data: { confirm: "Are you sure?" } %>
+</p>
 
-<h2>Comments</h2>
+<h2>funky goat comments</h2>
 <%= render @article.comments %>
 
-<h2>Add a comment:</h2>
+<h2>add a funky goat comment</h2>
 <%= render 'comments/form' %>

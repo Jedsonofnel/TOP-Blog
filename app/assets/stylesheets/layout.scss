@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Ubuntu&display=swap');
+
+body {
+  background-color: whitesmoke;
+
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  width: unquote("min(90%, 500px)");
+  font-family: 'Cabin', sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+
+  h1 {
+    color: darkgray;
+    font-style: italic;
+    font-size: 2rem;
+    font-family: 'Ubuntu', sans-serif;
+    
+    display: inline-block;
+    padding-bottom: 0.25em;
+    border-bottom: dotted;
+    border-color: slateblue;
+
+    a {
+      color: darkgray;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: slateblue;
+    }
+  }
+}

@@ -3,11 +3,13 @@
 // You can use Sass (SCSS) here: https://sass-lang.com/
 @import url('https://fonts.googleapis.com/css2?family=Cabin&family=Ubuntu&display=swap');
 
+// headers in the container
 h2 {
   font-size: 1.5rem;
   font-family: 'Ubuntu', sans-serif;
   color: black;
   margin: 0;
+  font-weight: bold;
 }
 
 ul.articles {
@@ -21,14 +23,21 @@ ul.articles {
     .title {
       font-family: 'Ubuntu', sans-serif;
       color: slateblue;
+      font-style: italic;
 
       &:before { content: '"'; }
       &:after { content: '"'; }
+
+      &:hover { color: darkslateblue; }
+      &:active { color: darkslateblue; }
     }
 
     a {
       text-decoration: none;
       color: slateblue;
+
+      &:hover { color: darkslateblue; }
+      &:active { color: darkslateblue; }
     }
   }
 
@@ -42,30 +51,43 @@ ul.articles {
 }
 
 span.plus > a {
-    text-decoration: none;
-    color: slateblue;
-}
+  text-decoration: none;
+  color: slateblue;
+  font-weight: bold;
 
-// Form stuff
-form {
-  width: 100%;
-  margin: 2em 0;
-}
-
-label {
-  &:before { content: ">>"; }
-  &:after { content: "<<"; }
-
-}
-
-#article_title {
-  background-color: slateblue;
-
-  &:before {
-    content: ">>";
+  &:hover {
+    color: darkslateblue;
   }
 
-  &:after {
-    content: "<<";
+  &:active {
+    color: darkslateblue;
+  }
+}
+
+p.article {
+  margin-top: -2em;
+  margin-bottom: 1em;
+
+  font-family: 'Cabin', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: darkgray;
+
+  white-space: pre-wrap;
+}
+
+p.article_options {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1rem;
+
+  margin-top: 1em;
+  margin-bottom: 2em;
+
+  a {
+    text-decoration: none;
+    color: slateblue;
+
+    &:hover { color: darkslateblue; }
+    &:active { color: darkslateblue; }
   }
 }

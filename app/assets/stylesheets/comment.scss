@@ -1,0 +1,35 @@
+// styles pertaining to the comments
+
+.comment {
+  line-height: 1.6;
+
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.commenter {
+  font-family: 'Ubuntu', sans-serif;
+  font-style: italic;
+  color: slateblue;
+  font-size: 1rem;
+}
+
+.comment-body {
+  font-family: 'Cabin', sans-serif;
+  color: darkgray;
+  
+  white-space: pre-line;
+}
+
+.delete-comment {
+  margin-top: 1em;
+  margin-bottom: 2em;
+
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1rem;
+
+  a {
+    text-decoration: none;
+    color: slateblue;
+  }
+}

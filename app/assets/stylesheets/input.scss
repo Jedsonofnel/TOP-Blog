@@ -1,0 +1,90 @@
+// Input elements rules
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Ubuntu&display=swap');
+
+@mixin box-borders {
+  border-left: none;
+  border-right: none;
+  border-top: 0.1rem solid slateblue;
+  border-bottom: 0.1rem solid slateblue;
+}
+
+@mixin text-input-font {
+  font-size: 1rem;
+  font-family: 'Cabin', sans-serif;
+  color: darkgray;
+}
+
+form {
+  width: 100%;
+  margin: 2em 0;
+
+  div {
+    margin-bottom: 2em;
+  }
+}
+
+label {
+  font-family: 'Ubuntu', sans-serif;
+  color: slateblue;
+  font-size: 1rem;
+  font-style: italic;
+
+  &:before { content: ">>"; }
+  &:after { content: "<<"; }
+}
+
+input[type=submit] {
+  border: none;
+  background-color: whitesmoke;
+
+  font-family: 'Ubuntu', sans-serif;
+  color: slateblue;
+  font-style: italic;
+  font-size: 1rem;
+
+  &:hover {
+    cursor: pointer;
+    color: darkslateblue;
+  }
+
+  &:active {
+    color:darkslateblue;
+  }
+}
+
+select {
+  @include box-borders;
+
+  appearance: none;
+  background-color: white;
+  width: 10em;
+  padding: 0.5em 0;
+
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1rem;
+  font-style: italic;
+  color: darkgray;
+
+  &:hover { background-color: whitesmoke; }
+}
+
+input[type=text] {
+  @include box-borders;
+  @include text-input-font;
+
+  width: 100%;
+  outline: none;
+
+  font-weight: bold;
+}
+
+textarea {
+  @include box-borders;
+  @include text-input-font;
+
+  width: 100%;
+  height: 10em;
+
+  outline: none;
+  resize: none;
+}

@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin&family=Ubuntu&display=swap');
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 body {
   background-color: whitesmoke;
 
@@ -18,6 +24,7 @@ body {
 header {
   display: flex;
   justify-content: center;
+  margin-bottom: 1rem;
 
   h1 {
     color: darkgray;
